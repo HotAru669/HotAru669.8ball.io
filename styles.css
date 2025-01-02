@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8B00FF;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#magicBall {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: idle 2s infinite;
+}
+@keyframes idle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+#answer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #222;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#userInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+#userQuestion {
+    width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+#shakeAgain {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#shakeAgain:hover {
+    background-color: #444;
+}
